@@ -1,0 +1,17 @@
+---
+- :breed: pitbull
+  :name: Monster
+  :age: 3
+  :color: grey
+- :breed: rotweiller
+  :name: Killa
+  :age: 4
+  :color: black
+- :breed: pugg
+  :name: Pukey
+  :age: 2
+  :color: grey
+- :breed: boxer
+  :name: Ralph
+  :age: 6
+  :color: brown

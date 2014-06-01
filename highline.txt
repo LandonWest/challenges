@@ -1,0 +1,32 @@
+# Create a new file called highline.txt to work on this exercise.
+# Install highline and explore its documentation.
+# Write three comments on what it does.
+# Write three comments on how to use it.
+
+HighLine was designed to ease the tedious tasks of doing console input and output
+    with low-level methods like gets() and puts().
+HighLine provides a robust system for requesting data from a user, without needing
+    to code all the error checking and validation rules and without needing to convert
+    the typed Strings into what your program really needs. Just tell HighLine what
+    you‘re after, and let it do all the work.
+
+
+
+
+from your working directory, in the terminal type:
+
+gem install highline
+
+
+Ex. 1 - Asks a user for a zip code, automatically does validation, and returns the result:
+          zip = ask("Zip?  ") { |q| q.validate = /\A\d{5}(?:-?\d{4})?\Z/ }
+
+Ex. 2 - Type conversion for answers:
+
+        ask("Birthday?  ", Date)
+        ask("Interests?  (comma sep list)  ", lambda { |str| str.split(/,\s*/) })
+
+Ex. 3 - Reading passwords:
+
+        ask("Enter your password:  ") { |q| q.echo = false }
+        ask("Enter your password:  ") { |q| q.echo = "x" }
